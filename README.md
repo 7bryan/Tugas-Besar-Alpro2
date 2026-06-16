@@ -73,8 +73,8 @@ Selain itu, program memiliki dua variabel global:
 
 ```bash
 # 1. Clone atau unduh file program
-git clone <url-repository>
-cd waste-track
+git clone https://github.com/7bryan/Tugas-Besar-Alpro2.git
+cd Tugas-Besar-Alpro2
 
 # 2. Jalankan program
 go run main.go
