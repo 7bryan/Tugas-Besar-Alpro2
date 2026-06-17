@@ -8,18 +8,18 @@ WASTE-TRACK adalah aplikasi command-line berbasis Go untuk mencatat, mengelola, 
 
 ## Daftar Isi
 
-- [Fitur](#-fitur)
+- [Fitur](#fitur)
 - [Struktur Data](#struktur-data)
-- [Cara Menjalankan](#-cara-menjalankan)
-- [Panduan Penggunaan](#-panduan-penggunaan)
+- [Cara Menjalankan](#cara-menjalankan)
+- [Panduan Penggunaan](#panduan-penggunaan)
   - [1. Manajemen Data Warga](#1-manajemen-data-warga)
   - [2. Catat Setoran Sampah](#2-catat-setoran-sampah)
   - [3. Cari Data Warga](#3-cari-data-warga)
   - [4. Urutkan Data Warga](#4-urutkan-data-warga)
   - [5. Tampilkan Statistik](#5-tampilkan-statistik)
-- [Algoritma yang Digunakan](#-algoritma-yang-digunakan)
-- [Contoh Alur Penggunaan](#-contoh-alur-penggunaan)
-- [Catatan Teknis](#-catatan-teknis)
+- [Algoritma yang Digunakan](#algoritma-yang-digunakan)
+- [Contoh Alur Penggunaan](#contoh-alur-penggunaan)
+- [Catatan Teknis](#catatan-teknis)
 
 ---
 
