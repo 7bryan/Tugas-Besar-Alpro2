@@ -58,7 +58,7 @@ PROCEDURE printFeature()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE evalChoice(choice : STRING, run : BOOLEAN)
   CASE choice OF
     "1" : CALL menuCRUDWarga()
@@ -75,7 +75,7 @@ ENDPROCEDURE
 
 ## 1. Manajemen Data Warga
 
-```
+```go
 PROCEDURE CRUDWarga()
   OUTPUT "=== MANAJEMEN DATA WARGA ==="
   OUTPUT "|1. Tampilkan Data Warga   |"
@@ -87,7 +87,7 @@ PROCEDURE CRUDWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE menuCRUDWarga()
   DECLARE subRun    : BOOLEAN ← TRUE
   DECLARE subChoice : STRING
@@ -110,7 +110,7 @@ PROCEDURE menuCRUDWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE showDataWarga()
   IF LENGTH(dataWarga) = 0 THEN
     OUTPUT "Data warga kosong"
@@ -127,7 +127,7 @@ PROCEDURE showDataWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 FUNCTION findIndexByID(id : INTEGER) : INTEGER
   FOR i ← 0 TO LENGTH(dataWarga) - 1 DO
     IF dataWarga[i].id = id THEN
@@ -138,7 +138,7 @@ FUNCTION findIndexByID(id : INTEGER) : INTEGER
 ENDFUNCTION
 ```
 
-```
+```go
 PROCEDURE tambahWarga()
   DECLARE newWarga : warga
 
@@ -161,7 +161,7 @@ PROCEDURE tambahWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE editWarga()
   DECLARE targetID : INTEGER
 
@@ -182,7 +182,7 @@ PROCEDURE editWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE hapusWarga()
   DECLARE targetID : INTEGER
 
@@ -208,7 +208,7 @@ ENDPROCEDURE
 
 ## 2. Catat Setoran Sampah
 
-```
+```go
 PROCEDURE catatSetoran()
   DECLARE targetID : INTEGER
 
@@ -276,7 +276,7 @@ ENDPROCEDURE
 
 ## 3. Pencarian Data Warga
 
-```
+```go
 PROCEDURE menuCariWarga()
   OUTPUT "=== PENCARIAN DATA WARGA ==="
   OUTPUT "|1. Cari Berdasarkan Nama   |"
@@ -305,7 +305,7 @@ PROCEDURE menuCariWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE sequentialSearch(query : STRING)
   // Sequential Search — O(n)
   DECLARE found : BOOLEAN ← FALSE
@@ -325,7 +325,7 @@ PROCEDURE sequentialSearch(query : STRING)
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE binarySearch(queryID : INTEGER)
   // Binary Search — O(log n), requires sorted data
   DECLARE tempData : ARRAY OF warga
@@ -375,7 +375,7 @@ ENDPROCEDURE
 
 ## 4. Pengurutan Data Warga
 
-```
+```go
 PROCEDURE menuUrutWarga()
   OUTPUT "==== PENGURUTAN DATA WARGA ===="
   OUTPUT "|1. Urutkan dengan Ascending  |"
@@ -407,7 +407,7 @@ PROCEDURE menuUrutWarga()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE selectionSort()
   // Selection Sort Ascending berdasarkan totalBerat — O(n²)
   FOR i ← 0 TO LENGTH(dataWarga) - 2 DO
@@ -422,7 +422,7 @@ PROCEDURE selectionSort()
 ENDPROCEDURE
 ```
 
-```
+```go
 PROCEDURE insertionSort()
   // Insertion Sort Descending berdasarkan totalBerat — O(n²)
   FOR i ← 1 TO LENGTH(dataWarga) - 1 DO
@@ -443,7 +443,7 @@ ENDPROCEDURE
 
 ## 5. Tampilkan Statistik
 
-```
+```go
 PROCEDURE tampilkanStatistik()
   OUTPUT "====== WASTE-TRACK STATISTIK ======"
   OUTPUT "|1. Statistik Berdasarkan Minggu  |"
