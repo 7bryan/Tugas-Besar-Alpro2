@@ -45,7 +45,7 @@ ENDPROCEDURE
 
 ## Menu Utama
 
-```
+```go
 PROCEDURE printFeature()
   OUTPUT "=========== WASTE-TRACK ==========="
   OUTPUT "|1. Manajemen Data Warga          |"
