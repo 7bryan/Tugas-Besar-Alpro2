@@ -2,7 +2,7 @@
 
 ## Struktur Data
 
-```
+```go
 STRUCTURE Transaksi
   date  : STRING
   jenis : STRING
@@ -25,7 +25,7 @@ DECLARE jenisSampah : ARRAY OF STRING
 
 ## Main Program
 
-```
+```go
 PROCEDURE main()
   DECLARE run    : BOOLEAN ← TRUE
   DECLARE choice : STRING
