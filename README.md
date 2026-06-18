@@ -11,7 +11,6 @@ WASTE-TRACK adalah aplikasi command-line berbasis Go untuk mencatat, mengelola, 
 - [Fitur](#fitur)
 - [Struktur Data](#struktur-data)
 - [Struktur Projek](#struktur-projek)
-- [Pseudocode](pseudocode.md)
 - [Cara Menjalankan](#cara-menjalankan)
 - [Panduan Penggunaan](#panduan-penggunaan)
   - [1. Manajemen Data Warga](#1-manajemen-data-warga)
@@ -22,6 +21,7 @@ WASTE-TRACK adalah aplikasi command-line berbasis Go untuk mencatat, mengelola, 
 - [Algoritma yang Digunakan](#algoritma-yang-digunakan)
 - [Contoh Alur Penggunaan](#contoh-alur-penggunaan)
 - [Catatan Teknis](#catatan-teknis)
+- [Pseudocode](pseudocode.md)
 
 ---
 
@@ -303,6 +303,12 @@ Berikut contoh skenario penggunaan lengkap:
 - **Input nama** — `fmt.Scan` membaca input hingga spasi pertama. Nama dengan spasi (contoh: "Budi Santoso") hanya akan terbaca sebagai "Budi".
 - **Jenis sampah bersifat global** — daftar jenis sampah berlaku untuk semua warga dan tidak bisa dihapus setelah ditambahkan.
 - **ID bersifat unik dan permanen** — ID tidak bisa diubah setelah warga didaftarkan.
+
+---
+
+## Pseudocode Program
+
+**[Lihat Dokumentasi Pseudocode Lengkap](pseudocode.md)**
 
 ---
 
