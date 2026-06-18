@@ -10,6 +10,8 @@ WASTE-TRACK adalah aplikasi command-line berbasis Go untuk mencatat, mengelola, 
 
 - [Fitur](#fitur)
 - [Struktur Data](#struktur-data)
+- [Struktur Projek](#struktur-projek)
+- [Pseudocode](pseudocode.md)
 - [Cara Menjalankan](#cara-menjalankan)
 - [Panduan Penggunaan](#panduan-penggunaan)
   - [1. Manajemen Data Warga](#1-manajemen-data-warga)
@@ -60,6 +62,17 @@ type warga struct {
 Selain itu, program memiliki dua variabel global:
 - `dataWarga []warga` — slice berisi seluruh data warga yang terdaftar
 - `jenisSampah []string` — slice berisi jenis-jenis sampah yang pernah disetorkan
+
+---
+
+## Struktur Projek
+
+```
+Tugas-Besar-Alpro2/
+├── main.go               # App main file
+├── pseudocode.md         # Pseudocode
+└── README.md             
+```
 
 ---
 
